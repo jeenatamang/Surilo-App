@@ -10,7 +10,7 @@ import {
 
 const Dashboard = () => {
   return (
-    <div className="min-h-screen bg-[#0b0b0f] text-white pl-72 pr-8 py-8 font-sans selection:bg-[#411217] max-w-350">
+    <div className="min-h-screen bg-[#13131a] text-white font-sans selection:bg-[#411217]">
       
       <div className="flex justify-between items-start mb-8">
         <div>

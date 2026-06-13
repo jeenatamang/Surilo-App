@@ -18,34 +18,34 @@ import {
 
 const Sidebar = () => {
   return (
-    <div className="w-65 h-screen bg-[#0b0b0f] border-r border-[#1c1c24] flex flex-col p-6 fixed top-0 left-0 text-white font-sans select-none">
-      <div className="flex items-center gap-3 pl-2 mb-8">
+    <div className="w-[175px] h-screen bg-[#0d0d12] border-r border-[#1c1c24] flex flex-col py-5 px-3 fixed top-0 left-0 text-white font-sans select-none z-50">
+      <div className="flex items-center gap-2 pl-1 mb-6">
         <img
-          className="w-9 h-9 rounded-full object-cover"
+          className="w-8 h-8 rounded-full object-cover"
           src={Surilologo}
           alt="Surilo logo"
         />
         <div className="flex flex-col">
-          <span className="text-base font-bold tracking-wide">Surilo</span>
-          <span className="text-xs text-[#8a8a93] mt-0.5">Admin Panel</span>
+          <span className="text-[13px] font-bold tracking-wide leading-tight">Navakaraṇa</span>
+          <span className="text-[10px] text-[#8a8a93] mt-0.5">Admin Panel</span>
         </div>
       </div>
 
-      <ul className="flex-1 list-none flex flex-col gap-1 overflow-y-auto pr-1 [&::-webkit-scrollbar]:hidden -ms-overflow-style:none scrollbar-width:none">
+      <ul className="flex-1 list-none flex flex-col gap-0.5 overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
         <li>
           <NavLink to="/dashboard"
-            className={({ isActive }) =>`w-full flex items-center gap-3 px-3.5 py-2.5 text-sm 
+            className={({ isActive }) =>`w-full flex items-center gap-2.5 px-3 py-2 text-[13px] 
             font-medium rounded-lg transition-colors duration-200 ${isActive ? "bg-[#411217] text-white" : "text-[#8a8a93] hover:bg-[#16161f] hover:text-white"}`
             }>
-            <LayoutDashboard className="w-4.5 h-4.5" />
-            Dashboard{" "}
+            <LayoutDashboard className="w-4 h-4 shrink-0" />
+            Dashboard
           </NavLink>
         </li>
 
         <li>
-          <NavLink to="/music-library" className={({ isActive }) =>`w-full flex items-center gap-3 
-          px-3.5 py-2.5 text-sm font-medium rounded-lg transition-colors duration-200 ${isActive ? "bg-[#411217] text-white" : "text-[#8a8a93] hover:bg-[#16161f] hover:text-white"}`}
-          ><Music className="w-4.5 h-4.5" />
+          <NavLink to="/music-library" className={({ isActive }) =>`w-full flex items-center gap-2.5 
+          px-3 py-2 text-[13px] font-medium rounded-lg transition-colors duration-200 ${isActive ? "bg-[#411217] text-white" : "text-[#8a8a93] hover:bg-[#16161f] hover:text-white"}`}
+          ><Music className="w-4 h-4 shrink-0" />
             Music Library
           </NavLink>
         </li>
@@ -53,18 +53,18 @@ const Sidebar = () => {
         <li>
           <NavLink to="/video-library"
             className={({ isActive }) =>
-              `w-full flex items-center gap-3 px-3.5 py-2.5 text-sm font-medium rounded-lg 
+              `w-full flex items-center gap-2.5 px-3 py-2 text-[13px] font-medium rounded-lg 
             transition-colors duration-200 ${isActive ? "bg-[#411217] text-white" : "text-[#8a8a93] hover:bg-[#16161f] hover:text-white"}`}
-          ><Video className="w-4.5 h-4.5" />
+          ><Video className="w-4 h-4 shrink-0" />
             Video Library
           </NavLink>
         </li>
 
         <li>
           <NavLink to="/artists" className={({ isActive }) =>
-              `w-full flex items-center gap-3 px-3.5 py-2.5 text-sm font-medium rounded-lg
+              `w-full flex items-center gap-2.5 px-3 py-2 text-[13px] font-medium rounded-lg
              transition-colors duration-200 ${isActive ? "bg-[#411217] text-white" : "text-[#8a8a93] hover:bg-[#16161f] hover:text-white"}`}
-          ><Users2 className="w-4.5 h-4.5" />
+          ><Users2 className="w-4 h-4 shrink-0" />
             Artists
           </NavLink>
         </li>
@@ -72,9 +72,9 @@ const Sidebar = () => {
         <li>
           <NavLink to="/albums"
             className={({ isActive }) =>
-              `w-full flex items-center gap-3 px-3.5 py-2.5 text-sm font-medium rounded-lg
+              `w-full flex items-center gap-2.5 px-3 py-2 text-[13px] font-medium rounded-lg
              transition-colors duration-200 ${isActive ? "bg-[#411217] text-white" : "text-[#8a8a93] hover:bg-[#16161f] hover:text-white"}`}
-          ><Disc className="w-4.5 h-4.5" />
+          ><Disc className="w-4 h-4 shrink-0" />
             Albums
           </NavLink>
         </li>
@@ -82,9 +82,9 @@ const Sidebar = () => {
         <li>
           <NavLink to="/genres"
             className={({ isActive }) =>
-              `w-full flex items-center gap-3 px-3.5 py-2.5 text-sm font-medium rounded-lg
+              `w-full flex items-center gap-2.5 px-3 py-2 text-[13px] font-medium rounded-lg
              transition-colors duration-200 ${isActive ? "bg-[#411217] text-white" : "text-[#8a8a93] hover:bg-[#16161f] hover:text-white"}`}
-          ><Tags className="w-4.5 h-4.5" />
+          ><Tags className="w-4 h-4 shrink-0" />
             Genres
           </NavLink>
         </li>
@@ -92,10 +92,10 @@ const Sidebar = () => {
         <li>
           <NavLink to="/users"
             className={({ isActive }) =>
-              `w-full flex items-center gap-3 px-3.5 py-2.5 text-sm font-medium rounded-lg 
+              `w-full flex items-center gap-2.5 px-3 py-2 text-[13px] font-medium rounded-lg 
             transition-colors duration-200 ${isActive ? "bg-[#411217] text-white" : "text-[#8a8a93] hover:bg-[#16161f] hover:text-white"}`
             }
-          ><Users className="w-4.5 h-4.5" />
+          ><Users className="w-4 h-4 shrink-0" />
             Users
           </NavLink>
         </li>
@@ -103,10 +103,10 @@ const Sidebar = () => {
         <li>
           <NavLink to="/subscriptions"
             className={({ isActive }) =>
-              `w-full flex items-center gap-3 px-3.5 py-2.5 text-sm font-medium rounded-lg 
+              `w-full flex items-center gap-2.5 px-3 py-2 text-[13px] font-medium rounded-lg 
             transition-colors duration-200 ${isActive ? "bg-[#411217] text-white" : "text-[#8a8a93] hover:bg-[#16161f] hover:text-white"}`
             }
-          ><CreditCard className="w-4.5 h-4.5" />
+          ><CreditCard className="w-4 h-4 shrink-0" />
             Subscriptions
           </NavLink>
         </li>
@@ -114,9 +114,9 @@ const Sidebar = () => {
         <li>
           <NavLink to="/subscription-plans"
             className={({ isActive }) =>
-              `w-full flex items-center gap-3 px-3.5 py-2.5 text-sm font-medium rounded-lg
+              `w-full flex items-center gap-2.5 px-3 py-2 text-[13px] font-medium rounded-lg
              transition-colors duration-200 ${isActive ? "bg-[#411217] text-white" : "text-[#8a8a93] hover:bg-[#16161f] hover:text-white"}`
-            }><Layers className="w-4.5 h-4.5" />
+            }><Layers className="w-4 h-4 shrink-0" />
             Subscription Plans
           </NavLink>
         </li>
@@ -124,9 +124,9 @@ const Sidebar = () => {
         <li>
           <NavLink to="/purchases"
             className={({ isActive }) =>
-              `w-full flex items-center gap-3 px-3.5 py-2.5 text-sm font-medium rounded-lg 
+              `w-full flex items-center gap-2.5 px-3 py-2 text-[13px] font-medium rounded-lg 
             transition-colors duration-200 ${isActive ? "bg-[#411217] text-white" : "text-[#8a8a93] hover:bg-[#16161f] hover:text-white"}`}
-          ><ShoppingBag className="w-4.5 h-4.5" />
+          ><ShoppingBag className="w-4 h-4 shrink-0" />
             Purchases
           </NavLink>
         </li>
@@ -134,28 +134,28 @@ const Sidebar = () => {
         <li><NavLink
             to="/coupons"
             className={({ isActive }) =>
-              `w-full flex items-center gap-3 px-3.5 py-2.5 text-sm font-medium rounded-lg 
+              `w-full flex items-center gap-2.5 px-3 py-2 text-[13px] font-medium rounded-lg 
             transition-colors duration-200 ${isActive ? "bg-[#411217] text-white" : "text-[#8a8a93] hover:bg-[#16161f] hover:text-white"}`}
-          ><Ticket className="w-4.5 h-4.5" />
+          ><Ticket className="w-4 h-4 shrink-0" />
             Coupons
           </NavLink>
         </li>
       </ul>
 
 
-      <div className="flex items-center gap-3 pt-4 pb-1 px-2 border-t border-[#1c1c24] mt-auto">
-        <div className="w-9 h-9 rounded-full bg-[#4a151b] flex items-center justify-center text-sm font-semibold">
+      <div className="flex items-center gap-2 pt-3 pb-1 px-1 border-t border-[#1c1c24] mt-auto">
+        <div className="w-8 h-8 rounded-full bg-[#4a151b] flex items-center justify-center text-sm font-semibold shrink-0">
           A
         </div>
-        <div className="flex flex-col">
-          <span className="text-sm font-medium text-white leading-tight">
+        <div className="flex flex-col min-w-0">
+          <span className="text-[13px] font-medium text-white leading-tight truncate">
             Admin
           </span>
-          <span className="text-xs text-[#8a8a93]">Administrator</span>
+          <span className="text-[11px] text-[#8a8a93] truncate">Administrator</span>
         </div>
         <button
-          className="ml-auto p-1 text-[#8a8a93] hover:text-white transition-colors duration-200"
-          title="Logout"><LogOut className="w-4.5 h-4.5" />
+          className="ml-auto p-1 text-[#8a8a93] hover:text-white transition-colors duration-200 shrink-0"
+          title="Logout"><LogOut className="w-4 h-4" />
         </button>
       </div>
     </div>

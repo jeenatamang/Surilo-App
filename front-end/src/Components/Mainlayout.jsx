@@ -4,10 +4,11 @@ import Sidebar from './Sidebar.jsx';
 
 const Mainlayout = () => {
   return (
-    <div className="flex bg-[#13131a] min-h-screen w-full overflow-x-hidden">
+    <div className="bg-[#13131a] min-h-screen w-full">
       <Sidebar />
-      <main className="flex-1 p-8 min-w-0">
-        <div className="max-w-7xl mx-auto">
+      {/* ml-[175px] matches the sidebar's fixed w-[175px] exactly */}
+      <main className="ml-[175px] min-h-screen bg-[#13131a] text-white font-sans">
+        <div className="p-8">
           <Outlet />
         </div>
       </main>
