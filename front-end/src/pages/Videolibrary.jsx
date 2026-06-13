@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Plus, Eye, MonitorOff } from "lucide-react";
-import tengokuImg from "../assets/images.jpg";
+import tengokuImg from "../assets/images1.jpg";
 
 const mockVideos = [
   {
