@@ -2,7 +2,6 @@ import React from 'react';
 import { Plus, Eye, Edit2 } from 'lucide-react';
 
 const Coupons = () => {
-  // Mock data matching the image provided
   const couponsData = [
     {
       id: 1,
@@ -43,7 +42,6 @@ const Coupons = () => {
         </button>
       </div>
 
-      {/* Summary Cards */}
       <div className="grid grid-cols-4 gap-4 mb-6">
         <div className="bg-[#2D163D] border border-[#3E1F54] rounded-lg p-4">
           <h3 className="text-xs text-gray-300 font-medium mb-2">Total Coupons</h3>
@@ -63,7 +61,6 @@ const Coupons = () => {
         </div>
       </div>
 
-      {/* Filter / Search Bar */}
       <div className="bg-[#151216] border border-[#262227] rounded-lg p-4 flex gap-4 items-center mb-6">
         <input 
           type="text" 
@@ -84,7 +81,6 @@ const Coupons = () => {
         </button>
       </div>
 
-      {/* Data Table */}
       <div className="bg-[#151216] border border-[#262227] rounded-lg overflow-hidden">
         <table className="w-full text-left text-sm">
           <thead className="bg-[#1B181E] text-gray-400 border-b border-[#262227]">
