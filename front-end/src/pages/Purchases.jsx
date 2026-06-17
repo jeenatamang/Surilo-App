@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import { Eye } from "lucide-react";
 
 const mockPurchases = [
-  { id: "TXN-CP6DSMAL56AN", user: "vdvdvd", email: "ggg@gmail.com", music: "供養 Kuyō Suizen", artist: "Dario Calvaruso & Andrea Fernandez", amount: "$4.50", status: "Completed", date: "Mar 30, 2026", time: "07:54 AM" },
+  { id: "TXN-CP6DSMAL56AN", user: "vdvdvd", email: "ggg@gmail.com", music: "供養 Kuyo Suizen", artist: "Dario Calvaruso & Andrea Fernandez", amount: "$4.50", status: "Completed", date: "Mar 30, 2026", time: "07:54 AM" },
   { id: "TXN-ARAN2DHLS2BT", user: "vdvdvd", email: "ggg@gmail.com", music: "手向 Tamuke", artist: "Dario Calvaruso", amount: "$4.50", status: "Completed", date: "Mar 30, 2026", time: "07:50 AM" },
   { id: "TXN-LQEPNLCTEDNNT", user: "vdvdvd", email: "ggg@gmail.com", music: "天国への階段 Tengokuhenokaidan", artist: "Dario Calvaruso", amount: "$4.50", status: "Completed", date: "Mar 30, 2026", time: "07:48 AM" },
-  { id: "TXN-QKS4B03R3KE6", user: "vdvdvd", email: "ggg@gmail.com", music: "Śuddhikaraṇa — Continuous Stream — F-432Hz", artist: "Dario Calvaruso & Andrea Fernandez", amount: "$13.50", status: "Completed", date: "Mar 30, 2026", time: "07:44 AM" },
-  { id: "TXN-CDS20811U00H", user: "hey", email: "hey@gmail.com", music: "供養 Kuyō Prakriyā", artist: "Dario Calvaruso", amount: "$4.50", status: "Completed", date: "Mar 30, 2026", time: "07:41 AM" },
-  { id: "TXN-27G3S13NMIEX", user: "hey", email: "hey@gmail.com", music: "一二三 Hifumi", artist: "Dario Calvaruso", amount: "$4.50", status: "Completed", date: "Mar 30, 2026", time: "07:33 AM" },
+  { id: "TXN-QKS4B03R3KE6", user: "vdvdvd", email: "ggg@gmail.com", music: "Suddhikarana — Continuous Stream — F-432Hz", artist: "Dario Calvaruso & Andrea Fernandez", amount: "$13.50", status: "Completed", date: "Mar 30, 2026", time: "07:44 AM" },
+  { id: "TXN-CDS20811U00H", user: "hey", email: "hey@gmail.com", music: "供養 Kuyo Prakriyā", artist: "Dario Calvaruso", amount: "$4.50", status: "Completed", date: "Mar 30, 2026", time: "07:41 AM" },
+  { id: "TXN-27G3S13NMIEX", user: "hey", email: "hey@gmail.com", music: "Hifumi", artist: "Dario Calvaruso", amount: "$4.50", status: "Completed", date: "Mar 30, 2026", time: "07:33 AM" },
   { id: "TXN-1XCAQM6YP34D", user: "hey", email: "hey@gmail.com", music: "虚鈴 Kyorei", artist: "Dario Calvaruso & Andrea Fernandez", amount: "$4.50", status: "Completed", date: "Mar 30, 2026", time: "07:28 AM" },
-  { id: "TXN-XH0YCU84NWZ4", user: "hey", email: "hey@gmail.com", music: "供養 Kuyō Suizen", artist: "Dario Calvaruso & Andrea Fernandez", amount: "$4.50", status: "Completed", date: "Mar 30, 2026", time: "07:22 AM" },
-  { id: "TXN-PM68N2ZCC3B1", user: "hey", email: "hey@gmail.com", music: "A#-432Hz Śuddhikaraṇa Continuous Streaming", artist: "Dario Calvaruso & Andrea Fernandez", amount: "$13.50", status: "Completed", date: "Mar 30, 2026", time: "07:13 AM" },
+  { id: "TXN-XH0YCU84NWZ4", user: "hey", email: "hey@gmail.com", music: "供養 Kuyo Suizen", artist: "Dario Calvaruso & Andrea Fernandez", amount: "$4.50", status: "Completed", date: "Mar 30, 2026", time: "07:22 AM" },
+  { id: "TXN-PM68N2ZCC3B1", user: "hey", email: "hey@gmail.com", music: "A#-432Hz Suddhikarana Continuous Streaming", artist: "Dario Calvaruso & Andrea Fernandez", amount: "$13.50", status: "Completed", date: "Mar 30, 2026", time: "07:13 AM" },
   { id: "TXN-YH8KL93ZXA01", user: "hey", email: "hey@gmail.com", music: "手向 Tamuke", artist: "Dario Calvaruso", amount: "$4.50", status: "Completed", date: "Mar 30, 2026", time: "07:09 AM" },
 ];
 

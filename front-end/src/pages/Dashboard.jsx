@@ -84,7 +84,7 @@ const Dashboard = () => {
 
               <div className="flex items-center justify-between p-4 bg-[#161622] rounded-xl border border-[#1c1c24]">
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-lg bg-[#2e1065] flex items-center justify-center text-[#a855f7] text-xs font-bold">★</div>
+                  <div className="w-8 h-8 rounded-lg bg-[#2e1065] flex items-center justify-center text-[#a855f7] text-xs font-bold"></div>
                   <div>
                     <p className="text-sm font-semibold">Premium Monthly</p>
                     <p className="text-xs text-[#8a8a93]">7 subscribers</p>
@@ -95,7 +95,7 @@ const Dashboard = () => {
 
               <div className="flex items-center justify-between p-4 bg-[#161622] rounded-xl border border-[#1c1c24]">
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-lg bg-[#2e1065] flex items-center justify-center text-[#a855f7] text-xs font-bold">★</div>
+                  <div className="w-8 h-8 rounded-lg bg-[#2e1065] flex items-center justify-center text-[#a855f7] text-xs font-bold"></div>
                   <div>
                     <p className="text-sm font-semibold">Premium Yearly</p>
                     <p className="text-xs text-[#8a8a93]">3 subscribers</p>
@@ -150,7 +150,7 @@ const Dashboard = () => {
                 <div key={index} className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-lg bg-[#1c1c24] flex items-center justify-center text-xs">
-                      🎵
+                      <Music className="w-5 h-5"></Music>
                     </div>
                     <div>
                       <p className="text-sm font-medium">Track Title {item}</p>
@@ -172,9 +172,9 @@ const Dashboard = () => {
             <div className="flex flex-col gap-3">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-lg bg-[#1c1c24] flex items-center justify-center text-xs">💿</div>
+                  <div className="w-10 h-10 rounded-lg bg-[#1c1c24] flex items-center justify-center text-xs"></div>
                   <div>
-                    <p className="text-sm font-medium">Śuddhikaraṇa — Continuous Stream</p>
+                    <p className="text-sm font-medium">Suddhikaraṇa — Continuous Stream</p>
                     <p className="text-xs text-[#8a8a93]">$13.50</p>
                   </div>
                 </div>

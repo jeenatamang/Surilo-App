@@ -4,14 +4,14 @@ import { Plus, Music } from "lucide-react";
 const mockAlbums = [
   {
     id: 1,
-    title: "Śuddhikaraṇa — Continuous Stream — F-432Hz",
+    title: "Suddhikarana - Continuous Stream - F-432Hz",
     description: "F-432Hz uninterrupted continuous streaming. Ideal for sound meditation and prakriyā.",
     tracks: 1,
     status: "Active",
   },
   {
     id: 2,
-    title: "Śuddhikaraṇa — Continuous Stream — A#-432Hz",
+    title: "Suddhikarana - Continuous Stream - A#-432Hz",
     description: "A#-432Hz uninterrupted continuous streaming. Ideal for sound meditation and prakriyā.",
     tracks: 1,
     status: "Active",
@@ -25,14 +25,14 @@ const mockAlbums = [
   },
   {
     id: 4,
-    title: "Śuddhikaraṇa F-432Hz",
+    title: "Suddhikarana F-432Hz",
     description: "Music for emotional catharsis",
     tracks: 3,
     status: "Active",
   },
   {
     id: 5,
-    title: "Śuddhikaraṇa",
+    title: "Suddhikarana",
     description: "No description available",
     tracks: 0,
     status: "Active",

@@ -16,8 +16,8 @@ const Coupons = () => {
     },
     {
       id: 2,
-      code: 'poojan1234',
-      name: 'Poojan Rawal',
+      code: 'jeena1234',
+      name: 'Jeena Tamang',
       assignedUser: 'test',
       assignedEmail: 'test66@test.com',
       songs: '2 song(s)',

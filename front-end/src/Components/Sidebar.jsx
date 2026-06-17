@@ -18,7 +18,7 @@ import {
 
 const Sidebar = () => {
   return (
-    <div className="w-[175px] h-screen bg-[#0d0d12] border-r border-[#1c1c24] flex flex-col py-5 px-3 fixed top-0 left-0 text-white font-sans select-none z-50">
+    <div className="w-43.75 h-screen bg-[#0d0d12] border-r border-[#1c1c24] flex flex-col py-5 px-3 fixed top-0 left-0 text-white font-sans select-none z-50">
       <div className="flex items-center gap-2 pl-1 mb-6">
         <img
           className="w-8 h-8 rounded-full object-cover"
@@ -31,7 +31,7 @@ const Sidebar = () => {
         </div>
       </div>
 
-      <ul className="flex-1 list-none flex flex-col gap-0.5 overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+      <ul className="flex-1 list-none flex flex-col gap-0.5 overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] scrollbar-width:none">
         <li>
           <NavLink to="/dashboard"
             className={({ isActive }) =>`w-full flex items-center gap-2.5 px-3 py-2 text-[13px] 

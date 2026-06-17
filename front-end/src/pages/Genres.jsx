@@ -8,7 +8,7 @@ const mockGenres = [
   {
     id: 1,
     name: "Fuke-suizen",
-    description: "Zen Koten Kyoku — ancient musical piece for Zen practices",
+    description: "Zen Koten Kyoku - ancient musical piece for Zen practices",
     tracks: 8,
     color: "#96191a",
     status: "Active",
